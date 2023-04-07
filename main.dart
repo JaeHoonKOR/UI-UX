@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget{
         primarySwatch: Colors.blue,
       ),
       home: MaterialFlutterApp(),
-    );//Maeterial Design기초 App bar, floating버튼
+    );
   }
 }
 
@@ -32,6 +32,17 @@ class _MaterialFlutterApp extends State<MaterialFlutterApp>{
           onPressed: (){
 
           }),
+      body: Container(
+        child:Center( //가로 정렬
+        child: Column(
+          children: <Widget>[
+            Icon(Icons.android),
+            Text('android')
+          ],
+    mainAxisAlignment: MainAxisAlignment.center,
+        ),
+        )
+      )
     );
   }
 }
