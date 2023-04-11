@@ -16,8 +16,10 @@ class _ImageWidgetApp extends State<ImageWidgetApp>{
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
-              Image.asset('image/img.png')
+              CircleAvatar(radius: 250, backgroundImage: AssetImage('image/img.png'),),
+              Text('Jae Hoon',  style: TextStyle(fontSize: 30),)
             ],
+
           ),
         ),
       ),
